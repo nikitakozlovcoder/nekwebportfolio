@@ -1,0 +1,81 @@
+.header
+  background: url("../img/hero-01.jpg") no-repeat center
+  background-size: cover
+  position: relative
+  &_wrap
+    display: flex
+    min-height: 100vh
+    height: 100%
+    flex-direction: column
+  &_content
+    margin: auto
+    color: white
+    z-index: 100
+    h1
+      color: white
+.nav
+  position: fixed
+  width: 100%
+  font-size: 16px
+  text-transform: uppercase
+  padding: 40px 0
+  color: white
+  background: rgb(35, 40, 49)
+  z-index: 1000
+
+  .link
+    padding: 5px 5px
+    width: 100%
+    margin: 10px 0
+  .wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+.overlay
+  opacity: .3
+  background: black
+  position: absolute
+  width: 100%
+  height: 100%
+  z-index: 1
+.btn-fade
+  display: none
+.links
+  overflow: hidden
+  width: 100%
+  position: relative
+  height: 0
+  transition: height .3s linear
+
+.links_wrap
+  display: flex
+  flex-direction: column
+.toggle_1
+  top: 0
+.toggle_3
+  bottom: 0
+.toggle_2
+  top: 50%
+  transform: translateY(-50%)
+.toggle_1, .toggle_2, .toggle_3
+  width: 30px
+  height: 3px
+  background: white
+  transition: all .3s linear
+  transform-origin: left
+  position: absolute
+
+.cross .toggle_1
+  transform: rotate(45deg)
+.cross .toggle_2
+  width: 0
+.cross .toggle_3
+  transform: rotate(-45deg)
+
+
+.toggle-menu
+  width: 30px
+  height: 24px
+  position: relative
+
