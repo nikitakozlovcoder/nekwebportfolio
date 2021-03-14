@@ -1,5 +1,7 @@
+.black
+  background-color: rgb(35, 40, 49) !important
 .header
-  background: url("../img/hero-01.jpg") no-repeat center
+  background: #465f74 url("../img/hero-01.jpg") no-repeat center
   background-size: cover
   position: relative
   &_wrap
@@ -18,10 +20,11 @@
   width: 100%
   font-size: 16px
   text-transform: uppercase
-  padding: 40px 0
+  padding: 20px 0
   color: white
   background: rgb(35, 40, 49)
   z-index: 1000
+  top: 0
 
   .link
     padding: 5px 5px
@@ -46,11 +49,12 @@
   width: 100%
   position: relative
   height: 0
-  transition: height .3s linear
+  transition: height .3s ease
 
 .links_wrap
   display: flex
   flex-direction: column
+  align-items: center
 .toggle_1
   top: 0
 .toggle_3
@@ -59,8 +63,8 @@
   top: 50%
   transform: translateY(-50%)
 .toggle_1, .toggle_2, .toggle_3
-  width: 30px
-  height: 3px
+  width: 25px
+  height: 2px
   background: white
   transition: all .3s linear
   transform-origin: left
@@ -75,7 +79,11 @@
 
 
 .toggle-menu
-  width: 30px
-  height: 24px
+  width: 25px
+  height: 19px
   position: relative
 
+.btn-nav
+  max-width: 200px
+.nav-line
+  display: none

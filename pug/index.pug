@@ -1,0 +1,195 @@
+doctype html
+html.no-js(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible', content='ie=edge')
+        title
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+        link(rel='apple-touch-icon', href='icon.png')
+        link(rel='stylesheet', href='./css/Bootstrap.css')
+        //
+          <link rel="stylesheet" href="./css/animate.css">
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        link(rel='preload', href='./img/hero-01.jpg', as='image')
+        // Place favicon.ico in the root directory
+    body
+        //if lte IE 9
+          p.browserupgrade
+            | You are using an
+            strong outdated
+            |  browser. Please
+            a(href='https://browsehappy.com/') upgrade your browser
+            |  to improve your experience and security.
+        // Add your site or application content here
+        header.header
+            nav.nav
+                .wrap
+                    .logo
+                        |NEK
+                        span W
+                        |EB
+                    .toggle-menu(style='cursor:pointer;')
+                        .toggle_1
+                        .toggle_2
+                        .toggle_3
+                    hr.nav-line
+                    .links
+                        .links_wrap
+                            hr
+                            a.link.features-link(href='#') Услуги
+                            a.link.why-link(href='#') Зачем
+                            a.link.btn.btn-nav(href='#') Написать
+            .overlay
+            .wrap.header_wrap
+                .header_content
+                    h1.animated.fadeInDown Профессиональные услуги
+                    .animated.fadeInUp В сфере разработки сайтов и api.
+                    br
+                    a.btn.btn-active.animated.fadeInUp.btn-header-contact(href='#') напишите нам
+                    |
+                    |
+                    a.btn.btn-fade.animated.fadeInUp.btn-show-more(href='#') узнать больше
+        section.features
+            .wrap.features_cols
+                .features_col_wrap.anim(data-anim='fadeInRight')
+                    .features_col
+                        .features_col_header
+                            i.fas.fa-cogs
+                            .features_col_title.title Разработка сайтов.
+                        .features_col_text
+                            | Использование современных технологий позволяет нам создавать быстрые и эффектные сайты.
+                .features_col_wrap.anim(data-anim='fadeInRight', data-del='0.3s')
+                    .features_col
+                        .features_col_header
+                            i.fab.fa-connectdevelop
+                            .features_col_title.title Создание API.
+                        .features_col_text.features_col_text-big
+                            | Продуманная архитектура и эффективные средства разработки снизят задержку с которой пользователи получат информацию.
+                .features_col_wrap.anim(data-anim='fadeInRight', data-del='0.7s')
+                    .features_col
+                        .features_col_header
+                            i.fas.fa-code
+                            .features_col_title.title Конструирование Web-приложений.
+                        .features_col_text
+                            | Платформонезависимые кроссбраузерные решения обеспечивают работу из любой точки мира.
+        section.benefits
+            .benefits_showcase.anim(data-anim='fadeInUp')
+                img(src='./img/devices.png', alt='')
+            .wrap
+                .benefits_content
+                    h2 Мы позаботимся о вашем продукте.
+                    div Представьте свой продукт миру, превратите посетителей в клиентов.
+                    .benefits_content_list_item.anim(data-anim='fadeInRight')
+                        .benefits_content_list_item_header
+                            i.far.fa-lightbulb
+                            .benefits_content_list_item_header_title.title Универсальные & адаптивные
+                        .benefits_content_list_item_text Наши проекты смотрятся замечательно на любом типе устройств.
+                        hr
+                    .benefits_content_list_item.anim(data-anim='fadeInRight', data-del='0.1s')
+                        .benefits_content_list_item_header
+                            i.far.fa-user
+                            .benefits_content_list_item_header_title.title Пользователь важнее.
+                        .benefits_content_list_item_text
+                            | Мы испольуем современные подходы к UI/UX дизайну, что делает наши приложения максимально удобными и доступными.
+                        hr
+                    .benefits_content_list_item.anim(data-anim='fadeInRight', data-del='0.2s')
+                        .benefits_content_list_item_header
+                            i.fas.fa-code-branch
+                            .benefits_content_list_item_header_title.title Оптимизированный код.
+                        .benefits_content_list_item_text Мы знаем насколько важна скорость и заботимся об этом.
+                        hr
+        section.about
+            .about_showcase.anim(data-anim='fadeInRight')
+                img(src='./img/macbook-pro.png', alt='')
+            .wrap
+                .about_content
+                    h2.anim(data-anim='fadeInDown') Почему это должно вас заинтересовать?
+                    .anim(data-anim='fadeInUp')
+                        | Сегодня интернет является одним из основных источников новых заказов для практически любой компании. Но для того что бы эффективно представить ваши товары или услуги, необходимо место, где люди смогут узнать о вашем предложении. Именно сайт или приложение послужит вам офисом и магазином, где вы сможете реализовать ваши товары или привлечь клиентов на другие виды деятельности.
+                    br
+                    a.btn.btn-to-contact.anim(href='#', data-anim='fadeInUp') Написать нам
+        section.steps
+            .steps_cols
+                .steps_col.steps_col-showcase
+                    i.fab.fa-html5.anim(data-anim='fadeInLeftBig')
+                .steps_col.steps_col-slider
+                    .fade_num 01
+                    .slider_show
+                        .slider_inner
+                            .slider_content
+                                h3 Расскажите нам о своей идее.
+                                |                            Мы всегда готовы воплотить в жизнь новый проект.
+                            .slider_content
+                                h3 Разработка дизайна.
+                                |                             Мы создадим дизайн, в который максимально эффективно интегрируем функционал будущего сайта.
+                            .slider_content
+                                h3 Реализация и тестирование.
+                                |                             Наши продукты не только быстро работают, но и лишены недоработок благодаря тщательному тестированию и анализу кода.
+                        .slider_controls
+                            .dot.slider-dot.slider-dot-active.slider-dot1
+                            .dot.slider-dot.slider-dot2
+                            .dot.slider-dot.slider-dot3
+        section(style='padding: 100px 20px')
+            h1.
+                Мы предоставляем лучшие услуги в сфере IT.
+        section.features_small
+            .wrap
+                .features_small_col.anim(data-anim='fadeInRight')
+                    img(src='./img/stat1.png', alt='alt')
+                    div Множество проектов.
+                    .features_dot.dot-1
+                        .core
+                .features_small_col.anim(data-anim='fadeInRight', data-del='0.2s')
+                    img(src='./img/stat2.png', alt='alt')
+                    div Довольные клиенты.
+                    .features_dot.dot-2
+                        .core
+                .features_small_col.anim(data-anim='fadeInRight', data-del='0.4s')
+                    img(src='./img/stat3.png', alt='alt')
+                    div Любовь пользователей.
+                    .features_dot.dot-3
+                        .core
+        section.contact(style='overflow: hidden')
+            .wrap
+                h1.anim_type.anim(data-type='Свяжитесь с нами.')
+                    span.anim_type_input
+                    span.anim_type-anim |
+                form(action='', method='post').contact_form
+                    .input-wrap.anim(data-anim='fadeInDown')
+                        .input-ico
+                            i.fas.fa-user
+                        input.input_name(type='text', placeholder='Введите свое имя', required)
+                    .input-wrap.anim(data-anim='fadeInLeft')
+                        .input-ico
+                            i.fas.fa-envelope
+                        input.input_mail(type='email', placeholder='Введите свой email', autocomplete='email', required)
+                    .input-wrap.anim(data-anim='fadeInLeft')
+                        .input-ico
+                            i.fas.fa-phone
+                        input.input_tel(type='tel', placeholder='Введите свой номер', required)
+                    textarea.anim.input_text(name='', id='', cols='30', rows='10', placeholder='Опишите задачу', style='resize: none', data-anim='fadeInUp')
+                    button.btn.btn-active.anim(type='submit', data-anim='fadeInUp') Отправить
+        footer.footer
+            .to_top
+                .wrap
+                    .top-ico
+                        i.fas.fa-angle-up
+            .wrap.wrap-footer
+                .footer_cols
+                    .footer_logo
+                        .logo
+                            |NEK
+                            span W
+                            |EB
+                    .footer_contact
+                        .footer_contact_item tel: +7(908)194-75-02
+                        .footer_contact_item email: nekweber@gmail.com
+                hr
+                .footer_created
+                    |Сделано с
+                    |
+                    i.fas.fa-heart.heart-bounced
+                    |
+                    |нашей командой.
+    script(src='./js/Bootstarp.js')
